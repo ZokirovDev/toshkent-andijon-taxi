@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="uz-Cyrl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Тошкент — Чинобод, Баликчи, Улугнор такси | Андижон йўналиши 24/7</title>
+<meta name="description" content="Тошкент ⇄ Чинобод, Баликчи, Улугнор, Андижон такси ва почта хизмати. Кеча-кундуз машина топасиз. Telegram гурухда 100+ хайдовчи эълони. Toshkent Andijon taxi.">
+<link rel="canonical" href="https://taxi.zokirov-mob-dev.uz/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Тошкент ⇄ Чинобод, Баликчи, Улугнор такси">
+<meta property="og:description" content="Кеча-кундуз машина ва почта. Telegram гурухдан керакли таксини топинг.">
+<meta property="og:url" content="https://taxi.zokirov-mob-dev.uz/">
+<meta property="og:locale" content="uz_UZ">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --asfalt:#101B2D;
+  --asfalt-2:#1B2B45;
+  --fara:#F5B833;
+  --fara-yumshoq:#FFD97A;
+  --beton:#E8EBEF;
+  --beton-2:#F6F7F9;
+  --chiziq:#C2CAD4;
+  --matn:#243247;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  background:var(--beton-2);
+  color:var(--matn);
+  font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+
+.ichki{max-width:760px;margin:0 auto;padding:0 20px}
+
+h1,h2,h3,.oswald{
+  font-family:'Oswald','Arial Narrow',sans-serif;
+  font-weight:600;
+  letter-spacing:.02em;
+  line-height:1.15;
+  text-transform:uppercase;
+}
+
+/* ---------- HERO: yo'l ---------- */
+.hero{
+  background:var(--asfalt);
+  color:#fff;
+  padding:38px 0 0;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";
+  position:absolute;inset:0;
+  background:radial-gradient(120% 70% at 50% 0%,rgba(245,184,51,.14),transparent 60%);
+  pointer-events:none;
+}
+.belgi{
+  display:inline-block;
+  font-family:'Oswald',sans-serif;
+  font-size:12px;letter-spacing:.18em;
+  color:var(--fara);
+  border:1px solid rgba(245,184,51,.45);
+  border-radius:2px;
+  padding:5px 11px;
+  margin-bottom:20px;
+}
+.hero h1{
+  font-size:clamp(29px,7.4vw,50px);
+  color:#fff;
+  margin-bottom:14px;
+}
+.hero h1 em{font-style:normal;color:var(--fara)}
+.hero p.lid{
+  font-size:17px;
+  color:#B8C4D6;
+  max-width:44ch;
+  margin-bottom:26px;
+  text-transform:none;
+}
+
+/* ---------- SIGNATURE: yo'nalish chizig'i ---------- */
+.yol{
+  position:relative;
+  margin:6px 0 0;
+  padding:26px 0 34px;
+  border-top:1px solid rgba(255,255,255,.1);
+}
+.yol::before{
+  content:"";
+  position:absolute;
+  left:9px;top:44px;bottom:52px;
+  width:2px;
+  background:repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,.55) 0 12px,
+    transparent 12px 24px
+  );
+}
+.bekat{
+  position:relative;
+  padding-left:34px;
+  margin-bottom:22px;
+}
+.bekat:last-child{margin-bottom:0}
+.bekat::before{
+  content:"";
+  position:absolute;
+  left:3px;top:8px;
+  width:15px;height:15px;
+  border-radius:50%;
+  background:var(--asfalt);
+  border:3px solid var(--fara);
+}
+.bekat.oraliq::before{
+  width:9px;height:9px;
+  left:6px;top:11px;
+  border-width:2px;
+  border-color:rgba(255,255,255,.4);
+}
+.bekat b{
+  font-family:'Oswald',sans-serif;
+  font-weight:500;
+  font-size:20px;
+  letter-spacing:.03em;
+  text-transform:uppercase;
+  display:block;
+  color:#fff;
+}
+.bekat span{
+  font-size:14px;
+  color:#8FA0B8;
+}
+
+/* ---------- CTA ---------- */
+.tugmalar{
+  background:var(--asfalt-2);
+  padding:22px 0 26px;
+  position:relative;z-index:2;
+}
+.tugma{
+  display:block;
+  text-align:center;
+  font-family:'Oswald',sans-serif;
+  font-size:18px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding:16px 18px;
+  border-radius:4px;
+  transition:transform .15s ease, background .15s ease;
+}
+.tugma:focus-visible{outline:3px solid var(--fara-yumshoq);outline-offset:3px}
+.tugma.asosiy{
+  background:var(--fara);
+  color:var(--asfalt);
+  font-weight:600;
+  margin-bottom:11px;
+}
+.tugma.asosiy:hover{background:var(--fara-yumshoq);transform:translateY(-1px)}
+.tugma.ikkilamchi{
+  border:1px solid rgba(255,255,255,.28);
+  color:#fff;
+}
+.tugma.ikkilamchi:hover{background:rgba(255,255,255,.07)}
+.tugma small{display:block;font-family:'Manrope',sans-serif;font-size:12.5px;letter-spacing:0;text-transform:none;opacity:.72;margin-top:3px;font-weight:400}
+
+/* ---------- Bo'limlar ---------- */
+section{padding:46px 0}
+section.oq{background:#fff}
+h2{
+  font-size:clamp(22px,5vw,31px);
+  margin-bottom:8px;
+}
+.tag{
+  font-family:'Oswald',sans-serif;
+  font-size:11.5px;letter-spacing:.2em;
+  color:#7A8BA3;
+  text-transform:uppercase;
+  display:block;
+  margin-bottom:9px;
+}
+section p{margin-bottom:15px}
+section p:last-child{margin-bottom:0}
+
+/* ---------- Qadamlar ---------- */
+.qadam{
+  display:flex;
+  gap:16px;
+  padding:17px 0;
+  border-bottom:1px solid var(--beton);
+}
+.qadam:last-child{border-bottom:0}
+.qadam .raqam{
+  flex:0 0 34px;
+  height:34px;
+  border-radius:50%;
+  background:var(--asfalt);
+  color:var(--fara);
+  font-family:'Oswald',sans-serif;
+  font-size:16px;
+  display:flex;align-items:center;justify-content:center;
+}
+.qadam h3{font-size:17px;margin-bottom:3px}
+.qadam p{font-size:15.5px;color:#4F5F76;margin:0}
+
+/* ---------- Yo'nalish kartalari ---------- */
+.karta{
+  border:1px solid var(--chiziq);
+  border-left:4px solid var(--fara);
+  border-radius:3px;
+  padding:17px 18px;
+  margin-bottom:13px;
+  background:#fff;
+}
+.karta h3{font-size:17px;margin-bottom:5px}
+.karta p{font-size:15.5px;color:#4F5F76;margin:0}
+
+/* ---------- FAQ ---------- */
+details{
+  border-bottom:1px solid var(--beton);
+  padding:15px 0;
+}
+details summary{
+  font-family:'Oswald',sans-serif;
+  font-size:17px;
+  letter-spacing:.02em;
+  cursor:pointer;
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  align-items:flex-start;
+}
+details summary::-webkit-details-marker{display:none}
+details summary::after{
+  content:"+";
+  color:var(--fara);
+  font-size:22px;
+  line-height:1;
+  flex:0 0 auto;
+}
+details[open] summary::after{content:"−"}
+details p{margin-top:10px;font-size:15.5px;color:#4F5F76}
+
+/* ---------- Footer ---------- */
+footer{
+  background:var(--asfalt);
+  color:#8FA0B8;
+  padding:34px 0;
+  font-size:14px;
+}
+footer a{color:var(--fara-yumshoq)}
+footer .lotin{
+  margin-top:16px;
+  padding-top:16px;
+  border-top:1px solid rgba(255,255,255,.1);
+  font-size:13px;
+  color:#6F819A;
+  line-height:1.7;
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="ichki">
+    <span class="belgi">АНДИЖОН ЙЎНАЛИШИ · 24/7</span>
+    <h1>Тошкент <em>⇄</em> Чинобод, Баликчи, Улугнор такси</h1>
+    <p class="lid">Хайдовчилар эълонларини Telegram гурухга ёзади — сиз ўзингизга керакли машинани, вақтни ва нархни танлайсиз. Воситачи йўқ.</p>
+
+    <div class="yol" aria-label="Йўналиш">
+      <div class="bekat">
+        <b>Тошкент</b>
+        <span>Куйлюк, Собир Рахимов, аэропорт — олиб кетамиз</span>
+      </div>
+      <div class="bekat oraliq">
+        <b>Қамчиқ довони</b>
+        <span>~330–360 км · йўлда 5–6 соат</span>
+      </div>
+      <div class="bekat">
+        <b>Чинобод</b>
+        <span>Баликчи тумани</span>
+      </div>
+      <div class="bekat">
+        <b>Баликчи</b>
+        <span>Андижон вилояти</span>
+      </div>
+      <div class="bekat">
+        <b>Улугнор</b>
+        <span>Андижон вилояти</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="tugmalar">
+  <div class="ichki">
+    <a class="tugma asosiy" href="https://t.me/chinobodbaliqchiulugnortosh">
+      Гурухга кириш
+      <small>Хайдовчи ва йўловчилар шу ерда — ёзиб, тўғридан-тўғри келишасиз</small>
+    </a>
+    <a class="tugma ikkilamchi" href="https://t.me/toshkent_baliqchi_ulugnor_taxi">
+      Жонли эълонлар оқими
+      <small>Фақат эълонлар, сухбатсиз</small>
+    </a>
+  </div>
+</div>
+
+<section class="oq">
+  <div class="ichki">
+    <span class="tag">Қандай ишлайди</span>
+    <h2>Уч қадамда машина</h2>
+
+    <div class="qadam">
+      <div class="raqam">1</div>
+      <div>
+        <h3>Гурухга киринг</h3>
+        <p>Рўйхатдан ўтиш, ариза, кутиш йўқ. Telegram да бир босишда.</p>
+      </div>
+    </div>
+    <div class="qadam">
+      <div class="raqam">2</div>
+      <div>
+        <h3>Эълонни ўқинг ёки ўзингиз ёзинг</h3>
+        <p>Хайдовчилар машина русумини, кетиш вақтини, неча жой борлигини ва телефонини ёзади. Йўловчи бўлсангиз ўз талабингизни ёзинг — хайдовчилар ўзи боғланади.</p>
+      </div>
+    </div>
+    <div class="qadam">
+      <div class="raqam">3</div>
+      <div>
+        <h3>Тўғридан-тўғри келишинг</h3>
+        <p>Нарх ва учрашув жойи хайдовчи билан бевосита ҳал бўлади. Гурух ҳақ олмайди.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="ichki">
+    <span class="tag">Йўналишлар</span>
+    <h2>Қайси томонга кетяпсиз</h2>
+
+    <div class="karta">
+      <h3>Тошкент → Чинобод, Баликчи, Улугнор</h3>
+      <p>Пойтахтдан Андижон вилоятига. Кўп машиналар кечқурун 22:00–00:00 да чиқади, эрталабга етиб борасиз. Кундузи ҳам қатнов бор.</p>
+    </div>
+    <div class="karta">
+      <h3>Чинобод, Баликчи, Улугнор → Тошкент</h3>
+      <p>Эрталаб 3:00–5:00 орасида чиқувчи машиналар кўп — Тошкентга иш вақтигача етиб борасиз.</p>
+    </div>
+    <div class="karta">
+      <h3>Почта ва юк жўнатиш</h3>
+      <p>Ҳужжат, дори, майда юк — хайдовчилар почта ҳам олади. Гурухда «почта оламиз» деб ёзилган эълонларни қидиринг.</p>
+    </div>
+    <div class="karta">
+      <h3>Аэропорт ва вокзалга етказиш</h3>
+      <p>Тошкент аэропорти ва темир йўл вокзалигача олиб бориш — эълонда шуни алоҳида кўрсатинг.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oq">
+  <div class="ichki">
+    <span class="tag">Саволлар</span>
+    <h2>Кўп сўраладиган</h2>
+
+    <details>
+      <summary>Такси нархи қанча?</summary>
+      <p>Нарх мавсум, ёқилғи нархи ва машина русумига қараб ўзгаради. Аниқ нархни гурухдаги эълонларда кўрасиз ёки хайдовчидан бевосита сўрайсиз. Гурух нарх белгиламайди.</p>
+    </details>
+    <details>
+      <summary>Тошкентдан Андижонгача қанча вақт кетади?</summary>
+      <p>Одатда 5–6 соат, масофа тахминан 330–360 км. Қамчиқ довонида қиш пайти ёки йўл ёпилганда вақт узаяди.</p>
+    </details>
+    <details>
+      <summary>Кечаси ҳам машина борми?</summary>
+      <p>Ҳа. Кўпчилик хайдовчи кечқурун 22:00–00:00 да Тошкентдан чиқади, Андижон томондан эса эрталаб 3:00–5:00 да йўлга тушади.</p>
+    </details>
+    <details>
+      <summary>Почта ёки юк жўнатса бўладими?</summary>
+      <p>Бўлади. Хайдовчилар ҳужжат, дори ва майда юкларни олади. Эълонда «почта оламиз» деб ёзилганини қидиринг ёки ўзингиз сўраб ёзинг.</p>
+    </details>
+    <details>
+      <summary>Аёл киши ёлғиз кетса хавфсизми?</summary>
+      <p>Гурухда кўп хайдовчилар «аёл киши бор» деб алоҳида ёзади — шундай машинани танласангиз бўлади. Йўлга чиқишдан олдин машина рақамини яқинларингизга юбориб қўйинг.</p>
+    </details>
+    <details>
+      <summary>Хайдовчиман, эълон бериш пулликми?</summary>
+      <p>Йўқ, бепул. Гурухга кириб эълонингизни ёзасиз. Ягона шарт — белгиланган форматда ёзиш, шунда йўловчилар сизни тезроқ топади.</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="ichki">
+    <p><strong style="color:#fff">Тошкент ⇄ Чинобод, Баликчи, Улугнор такси</strong><br>
+    Андижон вилояти йўналиши бўйича Telegram гурух. Кеча-кундуз.</p>
+    <p style="margin-top:12px">
+      <a href="https://t.me/chinobodbaliqchiulugnortosh">Telegram гурух</a> ·
+      <a href="https://t.me/toshkent_baliqchi_ulugnor_taxi">Эълонлар канали</a>
+    </p>
+    <div class="lotin">
+      Toshkent – Chinobod, Baliqchi, Ulug'nor, Andijon taxi va pochta xizmati.
+      Toshkentdan Andijonga taxi, Andijondan Toshkentga taxi, Baliqchi taxi,
+      Chinobod taxi, Ulug'nor taxi, Cobalt, Malibu, Damas. Kecha-kunduz, 24/7.
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://taxi.zokirov-mob-dev.uz/#website",
+      "url":"https://taxi.zokirov-mob-dev.uz/",
+      "name":"Тошкент ⇄ Чинобод, Баликчи, Улугнор такси",
+      "inLanguage":"uz"
+    },
+    {
+      "@type":"Service",
+      "name":"Тошкент — Чинобод, Баликчи, Улугнор такси ва почта хизмати",
+      "serviceType":"Taxi service",
+      "areaServed":[
+        {"@type":"City","name":"Тошкент"},
+        {"@type":"City","name":"Чинобод"},
+        {"@type":"AdministrativeArea","name":"Баликчи тумани"},
+        {"@type":"AdministrativeArea","name":"Улугнор тумани"},
+        {"@type":"AdministrativeArea","name":"Андижон вилояти"}
+      ],
+      "availableChannel":{
+        "@type":"ServiceChannel",
+        "serviceUrl":"https://t.me/chinobodbaliqchiulugnortosh",
+        "name":"Telegram гурух"
+      }
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"Такси нархи қанча?","acceptedAnswer":{"@type":"Answer","text":"Нарх мавсум, ёқилғи нархи ва машина русумига қараб ўзгаради. Аниқ нархни гурухдаги эълонларда кўрасиз ёки хайдовчидан бевосита сўрайсиз."}},
+        {"@type":"Question","name":"Тошкентдан Андижонгача қанча вақт кетади?","acceptedAnswer":{"@type":"Answer","text":"Одатда 5–6 соат, масофа тахминан 330–360 км. Қамчиқ довонида қиш пайти вақт узаяди."}},
+        {"@type":"Question","name":"Кечаси ҳам машина борми?","acceptedAnswer":{"@type":"Answer","text":"Ҳа. Кўпчилик хайдовчи кечқурун 22:00–00:00 да Тошкентдан чиқади, Андижон томондан эрталаб 3:00–5:00 да йўлга тушади."}},
+        {"@type":"Question","name":"Почта ёки юк жўнатса бўладими?","acceptedAnswer":{"@type":"Answer","text":"Бўлади. Хайдовчилар ҳужжат, дори ва майда юкларни олади."}},
+        {"@type":"Question","name":"Хайдовчиман, эълон бериш пулликми?","acceptedAnswer":{"@type":"Answer","text":"Йўқ, бепул. Гурухга кириб эълонингизни белгиланган форматда ёзасиз."}}
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
